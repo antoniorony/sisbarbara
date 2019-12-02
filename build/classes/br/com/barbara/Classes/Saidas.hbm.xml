@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/12/2018 16:05:14 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.barbara.Classes.Saidas" table="saidas" catalog="i9_db" optimistic-lock="version">
+        <id name="idSaidas" type="java.lang.Integer">
+            <column name="idSaidas" />
+            <generator class="identity" />
+        </id>
+        <property name="idProduto" type="int">
+            <column name="idProduto" not-null="true" />
+        </property>
+        <property name="quantidade" type="float">
+            <column name="quantidade" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="preco" type="float">
+            <column name="preco" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="idCliente" type="java.lang.Integer">
+            <column name="idCliente" />
+        </property>
+        <property name="data" type="string">
+            <column name="data" length="20" not-null="true" />
+        </property>
+        <property name="pagamento" type="string">
+            <column name="pagamento" length="15" not-null="true" />
+        </property>
+        <property name="observacao" type="string">
+            <column name="observacao" length="100" />
+        </property>
+        <property name="pg" type="int">
+            <column name="pg" not-null="true" />
+        </property>
+        <property name="numvenda" type="int">
+            <column name="numvenda" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

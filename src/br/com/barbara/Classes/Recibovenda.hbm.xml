@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/12/2018 16:05:14 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.barbara.Classes.Recibovenda" table="recibovenda" catalog="i9_db" optimistic-lock="version">
+        <id name="idvenda" type="java.lang.Integer">
+            <column name="idvenda" />
+            <generator class="identity" />
+        </id>
+        <property name="idcliente" type="int">
+            <column name="idcliente" not-null="true" />
+        </property>
+        <property name="datavenda" type="string">
+            <column name="datavenda" length="65535" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

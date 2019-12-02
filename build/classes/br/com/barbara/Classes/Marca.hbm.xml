@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/12/2018 16:05:14 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.barbara.Classes.Marca" table="marca" catalog="i9_db" optimistic-lock="version">
+        <id name="idMarca" type="java.lang.Integer">
+            <column name="idMarca" />
+            <generator class="identity" />
+        </id>
+        <property name="nomeMarca" type="string">
+            <column name="nomeMarca" length="30" not-null="true" />
+        </property>
+        <property name="idFornecedor" type="int">
+            <column name="idFornecedor" not-null="true" />
+        </property>
+        <property name="modelo" type="string">
+            <column name="Modelo" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

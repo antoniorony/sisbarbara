@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/12/2018 16:05:14 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.barbara.Classes.Clientes" table="clientes" catalog="i9_db" optimistic-lock="version">
+        <id name="idCliente" type="java.lang.Integer">
+            <column name="idCliente" />
+            <generator class="identity" />
+        </id>
+        <property name="nome" type="string">
+            <column name="nome" length="75" not-null="true" />
+        </property>
+        <property name="apelido" type="string">
+            <column name="apelido" length="30" not-null="true" />
+        </property>
+        <property name="cpf" type="string">
+            <column name="cpf" length="15" not-null="true" />
+        </property>
+        <property name="telefone" type="string">
+            <column name="telefone" length="15" not-null="true" />
+        </property>
+        <property name="logradouro" type="string">
+            <column name="logradouro" length="65535" not-null="true" />
+        </property>
+        <property name="numero" type="int">
+            <column name="numero" not-null="true" />
+        </property>
+        <property name="bairro" type="string">
+            <column name="bairro" length="75" not-null="true" />
+        </property>
+        <property name="cidade" type="string">
+            <column name="cidade" length="75" not-null="true" />
+        </property>
+        <property name="estado" type="string">
+            <column name="estado" length="25" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

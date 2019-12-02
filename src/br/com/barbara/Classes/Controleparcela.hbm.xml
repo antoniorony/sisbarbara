@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/12/2018 16:05:14 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.barbara.Classes.Controleparcela" table="controleparcela" catalog="i9_db" optimistic-lock="version">
+        <id name="idcontrole" type="java.lang.Integer">
+            <column name="IDCONTROLE" />
+            <generator class="identity" />
+        </id>
+        <property name="idcliente" type="int">
+            <column name="IDCLIENTE" not-null="true" />
+        </property>
+        <property name="vltotal" type="float">
+            <column name="VLTOTAL" precision="12" scale="0" not-null="true" />
+        </property>
+          <property name="vlentrada" type="float">
+            <column name="vlentrada" precision="12" scale="0" not-null="true" />
+        </property>
+         <property name="quantParcela" type="int">
+            <column name="quantParcela" not-null="true" />
+        </property>
+        <property name="controle" type="java.lang.Integer">
+            <column name="CONTROLE" />
+        </property>
+    </class>
+</hibernate-mapping>

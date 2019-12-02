@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/12/2018 16:05:14 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.barbara.Classes.Estoque" table="estoque" catalog="i9_db" optimistic-lock="version">
+        <id name="idEstoque" type="java.lang.Integer">
+            <column name="idEstoque" />
+            <generator class="identity" />
+        </id>
+        <property name="idProduto" type="int">
+            <column name="idProduto" not-null="true" />
+        </property>
+        <property name="quantidade" type="float">
+            <column name="quantidade" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="quantCaixa" type="float">
+            <column name="quantCaixa" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="quantVenda" type="java.lang.Float">
+            <column name="quantVenda" precision="12" scale="0" />
+        </property>
+        <property name="custo" type="float">
+            <column name="custo" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="porcentagem" type="float">
+            <column name="porcentagem" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="venda" type="float">
+            <column name="venda" precision="12" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

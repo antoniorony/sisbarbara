@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/12/2018 16:05:14 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.barbara.Classes.Fornecedores" table="fornecedores" catalog="i9_db" optimistic-lock="version">
+        <id name="idForn" type="java.lang.Integer">
+            <column name="idForn" />
+            <generator class="identity" />
+        </id>
+        <property name="nomeForn" type="string">
+            <column name="nomeForn" length="60" not-null="true" />
+        </property>
+        <property name="cnpjCpf" type="string">
+            <column name="cnpjCpf" length="20" not-null="true" />
+        </property>
+        <property name="telefone" type="string">
+            <column name="telefone" length="20" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="80" />
+        </property>
+        <property name="endereco" type="string">
+            <column name="endereco" length="65535" />
+        </property>
+    </class>
+</hibernate-mapping>

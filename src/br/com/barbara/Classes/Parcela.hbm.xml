@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/12/2018 16:05:14 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.barbara.Classes.Parcela" table="parcela" catalog="i9_db" optimistic-lock="version">
+        <id name="idparcela" type="java.lang.Integer">
+            <column name="idparcela" />
+            <generator class="identity" />
+        </id>
+        <property name="numvenda" type="int">
+            <column name="numvenda" not-null="true" />
+        </property>
+        <property name="idcliente" type="int">
+            <column name="idcliente" not-null="true" />
+        </property>
+        <property name="numparcela" type="int">
+            <column name="numparcela" not-null="true" />
+        </property>
+        <property name="valorparcela" type="float">
+            <column name="valorparcela" not-null="true" />
+        </property>
+        <property name="pago" type="java.lang.Integer">
+            <column name="pago" />
+        </property>
+    </class>
+</hibernate-mapping>

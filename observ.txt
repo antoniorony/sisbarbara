@@ -1,0 +1,5 @@
+seguencia para conexao e configuração do hibernate
+1 - classe de configuração
+2 - engenharia reversa
+3 - hibernate mapping file mapeamento 
+4 - classe util
